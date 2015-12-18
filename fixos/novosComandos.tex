@@ -1,0 +1,102 @@
+\newcommand{\curso}[1]{\def\imprimircurso{#1}}
+\newcommand{\dataDaAprovacao}[1]{\def\imprimirdatadaaprovacao{#1}}
+\newcommand{\tituloEstrangeiro}[1]{\def\imprimirtituloestrangeiro{#1}}
+
+\renewcommand{\imprimircapa}{%
+  % Solução para geração de páginas duplicadas, uma delas fica em branco
+  \hypersetup{pageanchor=false}
+
+  \begin{capa}
+    \begin{center}
+
+      % Cabeçalho (não deve ser modificado)
+      % Contém o brasão da Universidade, o logotipo do Departamento, além dos dados
+      % relacionados à vinculação do aluno (Universidade, Centro, Departamento e Curso)
+      \begin{minipage}{2cm}
+        \begin{center}
+          \includegraphics[width=1.7cm, height=2.0cm]{imagens/Brasao-UFRN.jpg}
+        \end{center}
+      \end{minipage}
+      \begin{minipage}{11cm}
+        \begin{center}
+          \begin{SingleSpace}
+            {\small \textsc{Universidade Federal do Rio Grande do Norte}
+\\
+                    \textsc{Centro de Ciências Exatas e da Terra}
+\\
+                    \textsc{Departamento de Informática e Matemática Aplicada}
+\\
+                    \textsc{Bacharelado em Ciência da Computação}}
+          \end{SingleSpace}
+        \end{center}
+      \end{minipage}
+      \begin{minipage}{2cm}
+        \begin{center}
+          \includegraphics[width=1.8cm, height=1.5cm]{imagens/Logotipo-DIMAp.jpg}
+        \end{center}
+      \end{minipage}
+
+      \vspace{6cm}
+
+      % Título do trabalho
+      {\setlength{\baselineskip}
+      {1.3\baselineskip}
+      {\LARGE \textbf{\imprimirtitulo}}\par}
+
+      \vspace{4cm}
+
+      % Nome do aluno (autor)
+
+      {\large \textbf{\imprimirautor}}
+
+      \vspace{7cm}
+
+      % Local da instituição onde o trabalho deve ser apresentado e ano de entrega do mesmo
+      \imprimirlocal\\\imprimirdata 
+    \end{center}
+  \end{capa}
+
+  % Solução para geração de páginas duplicadas, uma delas fica em branco
+  \hypersetup{pageanchor=true}
+}
+
+% Conteudo padrao da Folha de Rosto
+\makeatletter
+\renewcommand{\folhaderostocontent} {
+  \begin{center}
+
+    {\ABNTEXchapterfont\bfseries\large\imprimirautor}
+
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+
+    \abntex@ifnotempty{\imprimirpreambulo}{%
+      \hspace{.45\textwidth}
+      \begin{minipage}{.5\textwidth}
+        \SingleSpacing
+          \imprimirpreambulo
+      \end{minipage}%
+      \vspace*{\fill}
+    }%
+
+    {\large\imprimirorientadorRotulo~\par\imprimirorientador\par}
+    \abntex@ifnotempty{\imprimircoorientador}{%
+      {\large\imprimircoorientadorRotulo~\imprimircoorientador}
+    }%
+    \vspace*{\fill}
+
+    {\abntex@ifnotempty{\imprimirinstituicao}{%
+      \textsc{\imprimirinstituicao}\vspace*{\fill}}%
+    }
+
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+
+  \end{center}
+}
+\makeatother

@@ -1,0 +1,81 @@
+\input{fixos/pacotes}
+\input{fixos/novosComandos}
+%\input{fixos/ufrnComandos}
+\input{editaveis/informacoes}
+\input{fixos/informacoes}
+
+% Hifenização de palavras feita de forma incorreta pelo LaTeX
+\hyphenation{PYTHON ou-tros}
+
+% Inicio do documento
+
+\begin{document}
+
+  \frenchspacing
+  \imprimircapa
+  \imprimirfolhaderosto
+
+  \input{fixos/folhaDeAprovacao}
+  \input{editaveis/dedicatoria}
+  \input{editaveis/agradecimentos}
+  \input{editaveis/epigrafe}
+  \input{editaveis/resumo}
+  \input{editaveis/abstract}
+
+
+  % Lista de ilustrações e tabelas
+  \input{fixos/listasAutomaticas}
+
+  % Lista de abreviaturas e siglas
+  \input{editaveis/abreviaturas}
+
+  % Lista de símbolos
+  \input{editaveis/simbolos}
+
+  % Lista de algoritmos (se houver)
+  % Devem ser incluídos os pacotes algorithm e algorithmic
+  % \listofalgorithms
+	
+  % Sumário
+  \input{fixos/indiceAutomatico}
+
+  % Parte central do trabalho, englobando os capítulos que constituem o mesmo
+  % Os referidos capítulos devem ser organizados dentro do diretório "Capítulos"
+  \textual
+
+  % Capitulo 1: Introdução (arquivo capitulos/introducao.tex)
+  \input{capitulos/introducao}
+
+  % Capitulo 2: Segundo capítulo (arquivo capitulos/capitulo2.tex)
+  \input{capitulos/capitulo2}
+
+  % Capitulo 3: Terceiro capítulo (arquivo capitulos/capitulo3.tex)
+  \input{capitulos/capitulo3}
+
+  % Capitulo 4: Quarto capítulo (arquivo capitulos/capitulo4.tex)
+  \input{capitulos/capitulo4}
+
+  % Capitulo 5: Quinto capítulo (arquivo capitulos/capitulo5.tex)
+  \input{capitulos/capitulo5}
+
+  % Consideracoes finais
+  \input{capitulos/consideracoes}
+
+  \postextual
+  
+  % Bibliografia (arquivo capitulos/referencias.bib)
+  \bibliography{capitulos/referencias}
+  % Sistema autor-data
+  \bibliographystyle{abntex2-alf}
+  % Sistema numérico
+  %\bibliographystyle{abntex2-num}
+
+  % Apêndice A (arquivo capitulos/apendices.tex)
+  \input{capitulos/apendices}
+
+  % Anexo A (arquivo capitulos/anexos.tex)
+  \input{capitulos/anexos}
+
+  % Página em branco
+  \newpage
+\end{document}

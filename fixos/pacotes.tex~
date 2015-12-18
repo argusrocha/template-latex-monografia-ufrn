@@ -1,0 +1,23 @@
+\documentclass[a4paper, 12pt, openany, oneside, english, brazil]{abntex2}
+\usepackage[brazil]{babel}
+% Unix-like
+\usepackage[utf8]{inputenc}
+% Windows
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{dsfont}
+\usepackage{cmap}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{multirow}
+\usepackage{color, graphicx}
+\usepackage{colortbl}
+\usepackage{url}
+% Sistema autor-data
+\usepackage[alf]{abntex2cite}
+% Sistema numérico
+%\usepackage[num]{abntex2cite}
+%\usepackage{algorithm} % Erro na indexação de figuras e tabelas ao gerar pdf
+%\usepackage{algorithmic}
+%\usepackage{alg}
+%\usepackage{hyperref}
