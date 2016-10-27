@@ -1,9 +1,30 @@
 % Capítulo 5
 \chapter{Capítulo 5}
 
-\section{Seção 1}
+\section{Exemplo de algoritmo}
 
-Seção 1
+O Algoritmo \ref{alg:howto} usa o pacote {\texttt algorithm2e} que suporta comandos em Português.
+
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \Entrada{Entrada do algoritmo}
+    \Saida{Saída do Algoritmo}
+    inicialização\;
+    \Enqto{condição}{
+	instrução\;
+	\eSe{condição}{
+	    instrução1\;
+	    instrução2\;
+	}{
+	    instrução3\;
+	}
+    }
+    \Para{i de 1 até 10}{
+	instrução\;
+    }
+    \caption{Como escrever algoritmos}
+    \label{alg:howto}
+\end{algorithm}
 
 
 \section{Seção 2}
