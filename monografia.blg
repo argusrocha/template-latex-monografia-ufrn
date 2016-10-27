@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: monografia.aux
 The style file: abntex2-alf.bst
@@ -20,40 +20,40 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
-| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
-| http://abntex2.googlecode.com                           |
+| http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
 You've used 9 entries,
-            6711 wiz_defined-function locations,
+            6714 wiz_defined-function locations,
             1257 strings with 11020 characters,
-and the built_in function-call counts, 7265 in all, are:
-= -- 663
+and the built_in function-call counts, 7278 in all, are:
+= -- 665
 > -- 248
 < -- 10
 + -- 135
 - -- 75
 * -- 511
-:= -- 1019
+:= -- 1020
 add.period$ -- 30
 call.type$ -- 9
 change.case$ -- 84
 chr.to.int$ -- 18
 cite$ -- 8
-duplicate$ -- 303
-empty$ -- 544
+duplicate$ -- 305
+empty$ -- 546
 format.name$ -- 349
-if$ -- 1726
+if$ -- 1730
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 152
 newline$ -- 47
 num.names$ -- 40
-pop$ -- 210
+pop$ -- 211
 preamble$ -- 1
 purify$ -- 34
 quote$ -- 0
-skip$ -- 409
+skip$ -- 410
 stack$ -- 1
 substring$ -- 286
 swap$ -- 152

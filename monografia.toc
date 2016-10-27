@@ -37,7 +37,7 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Considera\c c\~oes finais}}{21}{chapter.6}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{22}{section*.15}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{22}{section*.15}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
