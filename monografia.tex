@@ -1,10 +1,11 @@
 \input{fixos/pacotes}
 \input{fixos/novosComandos}
 %\input{fixos/ufrnComandos}
+\input{fixos/configuracoes}
 \input{editaveis/informacoes}
 \input{fixos/informacoes}
 
-% Hifenização de palavras feita de forma incorreta pelo LaTeX
+% HifenizaÃ§Ã£o de palavras feita de forma incorreta pelo LaTeX
 \hyphenation{PYTHON ou-tros}
 
 % Inicio do documento
@@ -23,39 +24,40 @@
   \input{editaveis/abstract}
 
 
-  % Lista de ilustrações e tabelas
+  % Lista de ilustraÃ§Ãµes e tabelas
   \input{fixos/listasAutomaticas}
 
   % Lista de abreviaturas e siglas
   \input{editaveis/abreviaturas}
 
-  % Lista de símbolos
+  % Lista de sÃ­mbolos
   \input{editaveis/simbolos}
 
   % Lista de algoritmos (se houver)
-  % Devem ser incluídos os pacotes algorithm e algorithmic
-  % \listofalgorithms
+  % Devem ser incluÃ­dos os pacotes algorithm e algorithmic
+  \listofalgorithms
+  \newpage
 	
-  % Sumário
+  % SumÃ¡rio
   \input{fixos/indiceAutomatico}
 
-  % Parte central do trabalho, englobando os capítulos que constituem o mesmo
-  % Os referidos capítulos devem ser organizados dentro do diretório "Capítulos"
+  % Parte central do trabalho, englobando os capÃ­tulos que constituem o mesmo
+  % Os referidos capÃ­tulos devem ser organizados dentro do diretÃ³rio "CapÃ­tulos"
   \textual
 
-  % Capitulo 1: Introdução (arquivo capitulos/introducao.tex)
+  % Capitulo 1: IntroduÃ§Ã£o (arquivo capitulos/introducao.tex)
   \input{capitulos/introducao}
 
-  % Capitulo 2: Segundo capítulo (arquivo capitulos/capitulo2.tex)
+  % Capitulo 2: Segundo capÃ­tulo (arquivo capitulos/capitulo2.tex)
   \input{capitulos/capitulo2}
 
-  % Capitulo 3: Terceiro capítulo (arquivo capitulos/capitulo3.tex)
+  % Capitulo 3: Terceiro capÃ­tulo (arquivo capitulos/capitulo3.tex)
   \input{capitulos/capitulo3}
 
-  % Capitulo 4: Quarto capítulo (arquivo capitulos/capitulo4.tex)
+  % Capitulo 4: Quarto capÃ­tulo (arquivo capitulos/capitulo4.tex)
   \input{capitulos/capitulo4}
 
-  % Capitulo 5: Quinto capítulo (arquivo capitulos/capitulo5.tex)
+  % Capitulo 5: Quinto capÃ­tulo (arquivo capitulos/capitulo5.tex)
   \input{capitulos/capitulo5}
 
   % Consideracoes finais
@@ -67,15 +69,15 @@
   \bibliography{capitulos/referencias}
   % Sistema autor-data
   \bibliographystyle{abntex2-alf}
-  % Sistema numérico
+  % Sistema numÃ©rico
   %\bibliographystyle{abntex2-num}
 
-  % Apêndice A (arquivo capitulos/apendices.tex)
+  % ApÃªndice A (arquivo capitulos/apendices.tex)
   \input{capitulos/apendices}
 
   % Anexo A (arquivo capitulos/anexos.tex)
   \input{capitulos/anexos}
 
-  % Página em branco
+  % PÃ¡gina em branco
   \newpage
 \end{document}
