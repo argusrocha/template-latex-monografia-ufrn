@@ -9,18 +9,20 @@ O Algoritmo \ref{alg:howto} usa o pacote {\texttt algorithm2e} que suporta coman
     \SetAlgoLined
     \Entrada{Entrada do algoritmo}
     \Saida{Saída do Algoritmo}
-    inicialização\;
-    \Enqto{condição}{
-	instrução\;
-	\eSe{condição}{
-	    instrução1\;
-	    instrução2\;
-	}{
-	    instrução3\;
-	}
-    }
-    \Para{i de 1 até 10}{
-	instrução\;
+    \Inicio{
+        inicialização\;
+        \Enqto{condição}{
+    	instrução\;
+    	\eSe{condição}{
+    	    instrução1\;
+    	    instrução2\;
+    	}{
+    	    instrução3\;
+    	}
+        }
+        \Para{i de 1 até 10}{
+    	instrução\;
+        }
     }
     \caption{Como escrever algoritmos}
     \label{alg:howto}
