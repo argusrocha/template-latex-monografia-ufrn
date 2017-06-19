@@ -4,3 +4,24 @@
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
 \cleardoublepage
+
+% ------------------------
+%   LISTA DE ABREVIATURAS
+% ------------------------
+
+\newcommand{\abrv}[2][]{%
+  \ifthenelse{\equal{#1}{}}
+  {\addcontentsline{loab}{abreviatura}{#2}}
+  {\addcontentsline{loab}{abreviatura}{#1}}#2}
+% Para aceitar comandos com @ (at) no nome
+\makeatletter
+% \listadeabreviaturas: comando que imprime a lista de abreviaturas e siglas
+\newcommand{\listadeabreviaturas}
+{
+  \pretextualchapter{Lista de abreviaturas e siglas}
+  {\setlength{\parindent}{0cm}
+  \@starttoc{loab}}
+}
+% Como a entrada sera impressa
+\newcommand\l@abreviatura[2]{\par #1}
+\makeatother
